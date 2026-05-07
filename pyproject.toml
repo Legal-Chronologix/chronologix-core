@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chronologix"
+version = "0.1.0"
+description = "A source-linked legal chronology MVP using CourtListener/RECAP data"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "pdfplumber>=0.11",
+    "dateparser>=1.2",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+chronologix = "chronologix.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.4",
+]
+
+[tool.setuptools]
+packages = [
+    "chronologix",
+    "chronologix.configs",
+    "chronologix.utils",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "W",   # pycodestyle warnings
+    "I",   # import sorting
+]
