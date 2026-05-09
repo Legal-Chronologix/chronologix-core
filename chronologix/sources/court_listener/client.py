@@ -109,7 +109,7 @@ class CourtListenerClient:
 if __name__ == "__main__":
     client = CourtListenerClient()
 
-    docs = client.fetch_recap_documents_for_docket(
+    docs = client.fetch_recap_documents_for_docket_id(
         docket_id=59684707,
         only_available=True,
     )
