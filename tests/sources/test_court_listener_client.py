@@ -12,21 +12,6 @@ def make_response(status_code=200, payload=None, text="", headers=None):
     return response
 
 
-from unittest.mock import Mock
-
-from chronologix.sources.court_listener.client import CourtListenerClient
-
-
-def make_response(status_code=200, payload=None, text="", headers=None):
-    response = Mock()
-    response.status_code = status_code
-    response.ok = 200 <= status_code < 300
-    response.text = text
-    response.headers = headers or {}
-    response.json.return_value = payload or {}
-    return response
-
-
 def test_get_success(monkeypatch):
     fake_response = make_response(
         payload={
