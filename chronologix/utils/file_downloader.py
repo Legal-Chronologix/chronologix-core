@@ -1,7 +1,6 @@
 import mimetypes
 import os
 from pathlib import Path
-from urllib.parse import urljoin
 
 import requests
 
@@ -92,7 +91,8 @@ def download_file(
 #     PDF_DIR = "./data/court_listener/gipson/pdfs"
 #     os.makedirs(PDF_DIR, exist_ok=True)
 
-#     filepath_local = "recap/gov.uscourts.innd.106288/gov.uscourts.innd.106288.123.0.pdf"
+#     filepath_local = ("recap/gov.uscourts.innd.106288/gov.uscourts.innd.",
+#                        "106288.123.0.pdf", )
 
 #     download_url = urljoin(COURTLISTENER_FILE_STORAGE_URL, filepath_local)
 

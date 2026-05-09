@@ -2,6 +2,7 @@ from unittest.mock import Mock
 
 from chronologix.sources.court_listener.client import CourtListenerClient
 
+
 def make_response(status_code=200, payload=None, text="", headers=None):
     response = Mock()
     response.status_code = status_code
