@@ -4,12 +4,6 @@ from pathlib import Path
 
 import requests
 
-DEFAULT_OUTPUT_DIR = Path("./data/downloads")
-
-PDF_DIR = "./data/court_listener/gipson/pdfs"
-os.makedirs(PDF_DIR, exist_ok=True)
-
-
 def guess_extension(response, fallback=".bin"):
     """
     Try to infer the file extension from the HTTP response.
@@ -35,7 +29,7 @@ def guess_extension(response, fallback=".bin"):
 def download_file(
     filename,
     url,
-    output_dir=DEFAULT_OUTPUT_DIR,
+    output_dir=None,
     extension=None,
     timeout=30,
     headers=None,
@@ -57,6 +51,10 @@ def download_file(
     Returns:
         Path to the saved file if download succeeds, otherwise None.
     """
+    if output_dir is None:
+        raise FileNotFoundError("Please provide path for output_dir")
+    
+    
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -82,6 +80,28 @@ def download_file(
     print("Saved:", output_path)
     return output_path
 
+
+
+import re
+
+
+def slugify_filename(text: str) -> str:
+    """
+    Convert a document title into a safe filename slug.
+
+    Example:
+    "Amended Document - NOT Motion"
+    -> "amended_document_not_motion"
+    """
+    text = text.lower().strip()
+
+    # Replace any group of non-letter/number characters with underscore
+    text = re.sub(r"[^a-z0-9]+", "_", text)
+
+    # Remove leading/trailing underscores
+    text = text.strip("_")
+
+    return text
 
 ##----------Uncomment this section for quick test ------------------
 # if __name__ == "__main__":

@@ -7,9 +7,8 @@ load_dotenv()
 
 COURTLISTENER_BASE_URL = "https://www.courtlistener.com/api/rest/v4"
 COURTLISTENER_FILE_STORAGE_URL = "https://storage.courtlistener.com/"
-COURTLISTENER_PDF_DIR = Path("./data/court_listener/gipson/pdfs")
+COURTLISTENER_FILE_OUTPUT_DIR = Path("./data/court_listener/gipson/pdfs")
 COURTLISTENER_TOKEN = os.getenv("COURTLISTENER_TOKEN")
-
 
 def get_courtlistener_headers():
     """
