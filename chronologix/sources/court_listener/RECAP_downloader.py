@@ -1,12 +1,11 @@
-from pathlib import Path
 from urllib.parse import urljoin
 
 from chronologix.configs.court_listener import (
-    COURTLISTENER_FILE_STORAGE_URL,
     COURTLISTENER_FILE_OUTPUT_DIR,
+    COURTLISTENER_FILE_STORAGE_URL,
     get_courtlistener_headers,
 )
-from chronologix.utils.RECAP_downloader import download_file, slugify_filename
+from chronologix.utils.file_downloader import download_file, slugify_filename
 
 
 class CourtListenerRECAPDownloader:
@@ -68,8 +67,8 @@ class CourtListenerRECAPDownloader:
         https://storage.courtlistener.com/recap/gov.uscourts.innd.106288/file.pdf
         """
         return urljoin(COURTLISTENER_FILE_STORAGE_URL, filepath_local)
-    
-    
+
+
 ##----------Uncomment this section for quick test ------------------
 # if __name__ == "__main__":
 #     from chronologix.sources.court_listener.client import CourtListenerClient

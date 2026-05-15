@@ -1,8 +1,9 @@
 import mimetypes
-import os
+import re
 from pathlib import Path
 
 import requests
+
 
 def guess_extension(response, fallback=".bin"):
     """
@@ -53,8 +54,8 @@ def download_file(
     """
     if output_dir is None:
         raise FileNotFoundError("Please provide path for output_dir")
-    
-    
+
+
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -79,10 +80,6 @@ def download_file(
 
     print("Saved:", output_path)
     return output_path
-
-
-
-import re
 
 
 def slugify_filename(text: str) -> str:

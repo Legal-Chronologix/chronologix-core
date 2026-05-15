@@ -72,6 +72,8 @@ def test_get_retries_after_rate_limit(monkeypatch):
         ]
     )
 
+    mock_sleep = Mock()
+
     monkeypatch.setattr(
         "chronologix.sources.court_listener.client.requests.get",
         mock_get,
@@ -79,7 +81,7 @@ def test_get_retries_after_rate_limit(monkeypatch):
 
     monkeypatch.setattr(
         "chronologix.sources.court_listener.client.time.sleep",
-        Mock(),
+        mock_sleep,
     )
 
     monkeypatch.setattr(
@@ -89,6 +91,13 @@ def test_get_retries_after_rate_limit(monkeypatch):
 
     client = CourtListenerClient()
     data = client.get("/search/")
+    assert data == {
+        "results": [{"id": 123}],
+        "next": None,
+    }
+
+    assert mock_get.call_count == 2
+    mock_sleep.assert_called_once_with(1)
 
 
 def test_get_raises_runtime_error_on_failure(monkeypatch):

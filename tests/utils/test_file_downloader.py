@@ -1,6 +1,6 @@
 from unittest.mock import Mock
 
-from chronologix.utils.RECAP_downloader import download_file, guess_extension
+from chronologix.utils.file_downloader import download_file, guess_extension
 
 
 def test_guess_extension_from_pdf_content_type():

@@ -24,6 +24,7 @@ dev = [
     "ruff>=0.4",
 ]
 
+
 [tool.setuptools]
 packages = [
     "chronologix",
@@ -41,4 +42,12 @@ select = [
     "F",   # pyflakes
     "W",   # pycodestyle warnings
     "I",   # import sorting
+]
+
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:builtin type SwigPyPacked has no __module__ attribute:DeprecationWarning",
+    "ignore:builtin type SwigPyObject has no __module__ attribute:DeprecationWarning",
+    "ignore:builtin type swigvarlink has no __module__ attribute:DeprecationWarning",
 ]
