@@ -1,6 +1,4 @@
-import json
 import time
-from pathlib import Path
 
 import requests
 
@@ -105,20 +103,20 @@ class CourtListenerClient:
 
         return docs
 
+##----------Uncomment this section for quick test ------------------
+# if __name__ == "__main__":
+#     client = CourtListenerClient()
 
-if __name__ == "__main__":
-    client = CourtListenerClient()
+#     docs = client.fetch_recap_documents_for_docket_id(
+#         docket_id=59684707,
+#         only_available=True,
+#     )
 
-    docs = client.fetch_recap_documents_for_docket_id(
-        docket_id=59684707,
-        only_available=True,
-    )
+#     output_path = Path("data/court_listener/gipson/available_docs.json")
+#     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    output_path = Path("data/court_listener/gipson/available_docs.json")
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+#     with open(output_path, "w") as file:
+#         json.dump(docs, file, indent=2)
 
-    with open(output_path, "w") as file:
-        json.dump(docs, file, indent=2)
-
-    print("Saved:", output_path)
-    print("Available docs:", len(docs))
+#     print("Saved:", output_path)
+#     print("Available docs:", len(docs))

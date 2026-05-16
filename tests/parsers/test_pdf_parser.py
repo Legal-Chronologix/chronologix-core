@@ -19,9 +19,15 @@ def test_extract_text_by_page(monkeypatch, tmp_path):
 
     mock_open = Mock(return_value=fake_doc)
 
+    mock_clean = Mock(side_effect=lambda text: f"cleaned: {text}")
+
     monkeypatch.setattr(
         "chronologix.parsers.pdf_parser.pymupdf.open",
         mock_open,
+    )
+    monkeypatch.setattr(
+        "chronologix.parsers.pdf_parser.clean_extracted_text",
+        mock_clean,
     )
 
     result = extract_text_by_page(pdf_path)
@@ -34,13 +40,16 @@ def test_extract_text_by_page(monkeypatch, tmp_path):
     assert result["pages"] == [
         {
             "page_number": 1,
-            "text": "Page one text",
+            "raw_text": "Page one text",
+            "clean_text": "cleaned: Page one text",
         },
         {
             "page_number": 2,
-            "text": "Page two text",
+            "raw_text": "Page two text",
+            "clean_text": "cleaned: Page two text",
         },
     ]
 
     mock_open.assert_called_once_with(pdf_path, filetype="pdf")
+    assert mock_clean.call_count == 2
     fake_doc.close.assert_called_once()
