@@ -1,9 +1,9 @@
 # chronologix
 A legal-tech MVP that extracts source-linked timelines from public litigation documents and flags missing or conflicting events.
 
-# TODO
+## TODO
 
-## Done
+### Done
 
 - [x] Define Chronologix use case: source-linked chronology readiness
 - [x] Use CourtListener / RECAP as first data source
@@ -20,7 +20,7 @@ A legal-tech MVP that extracts source-linked timelines from public litigation do
 - [x] Add sentence/date extraction starter
 - [x] Add tests for downloader, parser, cleaner, and sentence splitter
 
-## Current focus
+### Current focus
 
 - [ ] Finish parsing all Gipson PDFs into JSON
 - [ ] Save extracted text to `data/court_listener/gipson/extracted_text/`
@@ -28,7 +28,7 @@ A legal-tech MVP that extracts source-linked timelines from public litigation do
 - [ ] Extract date-containing sentences from `1_complaint.pdf`
 - [ ] Keep source document and page number for every candidate event
 
-## Next
+### Next
 
 - [ ] Add `date_extractor.py`
 - [ ] Normalize dates with `dateparser`
@@ -36,7 +36,7 @@ A legal-tech MVP that extracts source-linked timelines from public litigation do
 - [ ] Add basic event fields: date, event text, source doc, page, status
 - [ ] Export candidate events as CSV or JSON table
 
-## Later
+### Later
 
 - [ ] Add readiness flags
 - [ ] Add section/header detection
