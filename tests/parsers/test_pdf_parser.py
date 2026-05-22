@@ -1,11 +1,14 @@
 from unittest.mock import Mock
 
-from chronologix.parsers.pdf_parser import extract_text_by_page
+from chronologix.parsers.pdf_parser import PDFParser
 
 
 def test_extract_text_by_page(monkeypatch, tmp_path):
     pdf_path = tmp_path / "sample.pdf"
     pdf_path.write_bytes(b"fake pdf content")
+
+    output_dir = tmp_path / "extracted_text"
+    parser = PDFParser(output_dir=output_dir)
 
     fake_page_1 = Mock()
     fake_page_1.get_text.return_value = "Page one text"
@@ -18,7 +21,6 @@ def test_extract_text_by_page(monkeypatch, tmp_path):
     fake_doc.close = Mock()
 
     mock_open = Mock(return_value=fake_doc)
-
     mock_clean = Mock(side_effect=lambda text: f"cleaned: {text}")
 
     monkeypatch.setattr(
@@ -30,7 +32,7 @@ def test_extract_text_by_page(monkeypatch, tmp_path):
         mock_clean,
     )
 
-    result = extract_text_by_page(pdf_path)
+    result = parser.extract_text_by_page(pdf_path)
 
     assert result["doc_name"] == "sample.pdf"
     assert result["filepath"] == str(pdf_path)
