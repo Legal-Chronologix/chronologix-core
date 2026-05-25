@@ -1,0 +1,443 @@
+[
+  {
+    "event_id": "1971ea29-937b-4452-a487-368025e4dac4",
+    "event_text": "CERTIFICATE OF SERVICE The undersigned attorney hereby certifies that he caused a true and accurate copy of the foregoing Defendant United Steelworkers Local 6103 Motion for Summary Judgment to be served on the individuals listed below by causing the foregoing to be electronically filed using the CM/ECF filing system on April 9, 2025.",
+    "source_doc": "104_summary_judgment.pdf",
+    "page_number": 3,
+    "doc_role": "motion_summary_judgment",
+    "perspective": "defendant",
+    "status": "candidate"
+  },
+  {
+    "event_id": "520db88e-99b3-471b-becb-ba9f921e5376",
+    "event_text": "Tel: (317) 489-6930 Fax: (317) 489-6931 dorothy.mcdermott@jacksonlewis.com zachary.ahonen@jacksonlewis.com chad.holler@jacksonlewis.com Rodney M. Torbic US Steel Corporation - 1500 Law Department 600 Grant Street, Room 1500 Pittsburgh, PA 15219-2800 rmtorbic@uss.com Attorneys for Defendant, United States Steel Corporation CERTIFICATE OF SERVICE The undersigned hereby certifies that on July 3, 2025, the foregoing was filed electronically.",
+    "source_doc": "118_amended_document_not_motion.pdf",
+    "page_number": 2,
+    "doc_role": "other",
+    "perspective": "unknown",
+    "status": "candidate"
+  },
+  {
+    "event_id": "d2d3f655-5000-4702-a997-ec1261a8b189",
+    "event_text": "USS argues that incidents occurring prior to January 1, 2020, should not be considered because any claim based upon them is time barred.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 2,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "30a61887-ddf6-4eef-ba60-1080671e1e13",
+    "event_text": "Plaintiff filed a charge with the Equal Employment Opportunity Commission (“EEOC”) on June 6, 2019, alleging race discrimination by USS managers.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 3,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "fb7e4fd5-cb2a-4dea-b1ef-a5999316b538",
+    "event_text": "On January 16, 2020, plaintiff was assigned to change three sets of knives on the pickle line with a new learner, Charles Canzoreni.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 3,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "fc44cb23-905a-470f-af8f-2edd385fcabb",
+    "event_text": "On January 22, 2020, USS issued a five-day suspension to plaintiff for unsatisfactory work performance.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 3,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "831cdfb2-2839-4bdb-9e83-80c0740423df",
+    "event_text": "USW Local 6103 filed a grievance regarding the suspension on plaintiff’s behalf, which resulting in a hearing on January 23, 2020.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 3,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "5774adef-d3cd-4a59-a472-00d231c444ea",
+    "event_text": "at 10.) By agreement with USW Local 6103, on September 2, 2020, USS issued plaintiff a $10,000 check “in the full and final settlement of all grievances” and as a “full and final settlement of the subject complaint.”  Plaintiff accepted the check, but states he did not agree to the settlement that USW 3 USDC IN/ND case 2:21-cv-00071-JTM-JEM document 123 filed 03/27/26 page 3 of 12",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 3,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "98a32145-9b5e-4e11-9867-a71ca437ca5e",
+    "event_text": "Plaintiff filed another charge with the EEOC on October 27, 2020, alleging race discrimination and retaliation.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 4,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "58cdc422-686f-4990-a170-7b5ed29125e5",
+    "event_text": "The EEOC issued a right-to-sue letter on November 24, 2020.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 4,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "273ced4e-d2bf-4f64-8253-b5a925f11eaa",
+    "event_text": "at 14.) On February 25, 2021, plaintiff filed the present lawsuit against USS and USW Local 6103, alleging discrimination on the basis of race and retaliation for engaging in protected activity.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 4,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "b55967ef-a319-4a79-b5f4-07358c01cce8",
+    "event_text": "Specifically, USS contends that plaintiff was negligent in the performance of his duties on January 16, 2020.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 7,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "cba9d326-78c1-4570-a08a-f0bdc5b2cfc8",
+    "event_text": "Plaintiff contends that he engaged in statutorily protected activity by filing his first EEOC charge on June 6, 2019.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 11,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "0fc24a59-7e12-46b3-817e-fde649f6e9bc",
+    "event_text": "USS terminated plaintiff on January 23, 2020.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 11,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "06337797-bd3e-4596-aecd-c8318a8ccc36",
+    "event_text": "Date: March 27, 2026 s/ James T. Moody JUDGE JAMES T.",
+    "source_doc": "123_opinion_and_order_and_terminate_civil_case.pdf",
+    "page_number": 12,
+    "doc_role": "opinion",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "3e31bf14-b31f-43a8-9a7e-f061f8d8e801",
+    "event_text": "Saladin J. Gipson, the plaintiff, was employed by United States Steel Corporation (USS) at its Midwest Plant beginning on October 29, 2012.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 1,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "b5d93097-7104-45d7-8313-9a7da2e3f992",
+    "event_text": "On January 22, 2020 Mr. Gipson was sent home from work at the Midwest Plant, and subsequently terminated.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 1,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "d35c93a2-486f-4aba-8665-a296964a1229",
+    "event_text": "The EEOC issued a “Dismal and Notice of Rights” (attached) to Mr. Gipson, which indicates it was mailed to him on November 24, 2020.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 1,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "74e83724-efda-4904-a806-81e31adcc6d2",
+    "event_text": "The EEOC issued a “Dismal and Notice of Rights” (attached) to Mr. Gipson, which indicates it was mailed to him on January 20, 2021.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 2,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "dc30fcf1-0c87-4a47-a143-8a2de105b726",
+    "event_text": "USS hired Mr. Gipson on October 29, 2012 to work in its Midwest Plant located in Portage, Indiana.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 2,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "44df77bc-b4fe-46bc-bddd-034a01427762",
+    "event_text": "Mr. Gipson became a member of USW, on or about November 28, 2012.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 2,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "8998c808-070e-4cc4-9d8e-161571c134f3",
+    "event_text": "On June 6, 2019, Mr. Gipson filed a charge of discrimination with the Gary Human Relations Commissions (FERP) / Equal Employment Opportunity Commission (EEOC) (Charge No. 24E-2019-00136) alleging that USS, through Domonic Banta, Maintenance Supervisor for USS, Tim Meredith, Forman for USW, and Jonathan Richman, Labor Relations for USS, had engaged in a pattern of discrimination beginning in February of 2019 though the time of its filing in June of 2019.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 2,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "3f4ee1db-cbf0-4e9f-bd23-690b84f81b34",
+    "event_text": "work assignments while allowing similarly situated white employees to receive training, Subsequently, the EEOC issued a Notice of Right to Sue Letter based on August 28, 2019.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 3,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "50ee7bc3-dcba-428c-aa84-9f913a0d85a7",
+    "event_text": "On January 22, 2020 Mr. Gipson was sent home and subsequently discharged for allegedly failing to stabilize the “#2 Shear” machine.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 3,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "d30f934f-5bbd-4854-a3c1-77d5bd298ff5",
+    "event_text": "Prior to January 22, 2020, USW management, including Harry Mendoza and Domonic Bonta knew that the “#2 Shear” machine was unstable due to damaged foundation and other working conditions involving the grade of steel, yet they still sent Mr. Gipson home and requested he be discharged.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 3,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "dc17a6ee-ae68-46b1-a92e-996b553a91cb",
+    "event_text": "That in year following January 22, 2020, the same condition has occurred with “#2 Shear” machine at least three (3) times, and no employee has been disciplined or terminated for the occurrences.",
+    "source_doc": "1_complaint.pdf",
+    "page_number": 3,
+    "doc_role": "complaint",
+    "perspective": "plaintiff",
+    "status": "candidate"
+  },
+  {
+    "event_id": "911015bd-58bf-497a-85e1-9ae78fcd0dfe",
+    "event_text": "FINDINGS, REPORT AND RECOMMENDATION OF UNITED STATES MAGISTRATE JUDGE PURSUANT TO 28 U.S.C. ' 636(b)(1)(B) & (C) This matter is before the Court on Plaintiff’s Motion to Reconsider Sanctions Issued, and Prohibition on Conducting Discovery and Motion for Clarification on Sanctions [DE 87] filed on June 10, 2024.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 1,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "bc48ab47-a6fc-4746-ad1b-c1ec32ce8890",
+    "event_text": "On May 3, 2022, District Court Judge James T. Moody entered an Order [DE 31] referring an underlying motion to dismiss as a discovery sanction [DE 28] to the undersigned Magistrate Judge for a report and recommendation pursuant to 28 U.S.C. ' 636(b)(1)(B).",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 1,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "d5886671-ebd7-4950-a90b-1f6898318461",
+    "event_text": "Neither party objected to the Court’s Report and Recommendation imposing discovery sanctions on Plaintiff for his failure to participate in discovery [DE 32], and District Court Judge Moody accepted the report and recommendation on February 3, 2023 [DE 47].",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 1,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "e4094b5c-a04f-4a49-8416-3953d6506cf8",
+    "event_text": "This Order constitutes the undersigned Magistrate Judge’s proposed findings and recommendations on the motion to reconsider the Order on the motion for dismissal or other discovery sanctions pursuant to 28 U.S.C. ' 636(b)(1)(C) For the reasons discussed at the hearing on May 30, 2024, the Court denies the request to reconsider the attorneys’ fees award [DE 23] or apportion the fees between Plaintiff and his prior attorney at this time.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 2,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "7e117f0d-5102-42bf-ba17-aa7cb4973d2c",
+    "event_text": "I. Background On December 9, 2021, the Court granted a motion to compel filed by Defendant United States Steel Corporation (“USS”) and ordered Plaintiff “to tender to United States Steel Corporation, on or before January 3, 2022, all responsive documents, in compliance with Rule 34.” USS filed an itemization of fees, and on February 2, 2022, the Court ordered Plaintiff or his counsel, Attorney Dillon, to reimburse USS for its costs relating to the motion to compel in the sum of $5,980.00 “within a reasonable time.” To date, neither Plaintiff nor Attorney Dillon have reimbursed USS those costs.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 2,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "6e9cbac3-042a-4098-ad3f-cae68fc290f6",
+    "event_text": "did not appear for his deposition noticed for March 22, 2022, and had not provided supplemental discovery response to Defendants as of March 22, 2022.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 3,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "4017795e-291f-4853-99c8-29e16dc64241",
+    "event_text": "On March 22, 2022, counsel for all Defendants received an email from Attorney Dillon indicating that he had mis- calendared the deposition and offering to pay costs.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 3,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "c7a92197-b764-4884-8377-ebaa51986ef1",
+    "event_text": "Plaintiff filed a Chapter 13 bankruptcy petition on February 17, 2022.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 3,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "e6f417fc-ba3b-4bf6-9c73-3a3c81233c82",
+    "event_text": "Plaintiff’s list of assets did not include this lawsuit, and Plaintiff’s list of creditors did not include any reference to the sanctions ordered to be paid to Plaintiff in this lawsuit pursuant to the February 2, 2022, Order on the Defendants’ Motion to Compel.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 3,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "6ee7e9dc-1eba-41dc-923e-96b0cfe2dcf0",
+    "event_text": "On March 21, 2024, Plaintiff’s bankruptcy was dismissed.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 3,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "00794124-9a05-41ef-aeee-00f831a05787",
+    "event_text": "Plaintiff appeared at a September 15, 2022, hearing but Attorney Dillon did not, and Attorney Dillon also failed to appear at a subsequent show cause hearing or to show cause for those failures.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 3,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "65bb806b-4795-4341-8a11-6bfdf38ba0ff",
+    "event_text": "On December 15, 2022, Attorney Dillon finally appeared, and at that hearing agreed to an assessment of fees for Defendants’ counsels’ appearances on September 15, 2022, and October 20, 2022.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 3,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "4713cb66-f7f3-4195-86eb-79a60b4456ee",
+    "event_text": "As of February 2, 2023, he had not paid the sanction.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 3,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "747818de-f13d-4909-aa6b-655c25630206",
+    "event_text": "Attorney Dillon again failed to appear at a hearing set for April 6, 2023.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 3,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "55a80ecb-5ffd-429b-b504-0dd714bc77a5",
+    "event_text": "On May 12, 2022, the Court recommended that Defendants’ motion to dismiss or in the alternative to limit Plaintiff’s discovery as discovery sanctions be granted in part, and on February 3, 2023, District Court James T. Moody adopted the report and recommendation denying Defendants’ request for dismissal as a discovery sanction but barring Plaintiff from conducting discovery and permitting Defendants to complete outstanding discovery [DE 47].",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 4,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "f582f5cc-5924-4433-9d73-97d8cf0ba60d",
+    "event_text": "Thereafter, on March 14, 2023, Attorney Tutwiler accepted the Court’s request that she represent Plaintiff.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 4,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "57e31133-0dfa-44b9-8e40-8eca79247129",
+    "event_text": "At a telephonic scheduling conference on May 30, 2024, the Court set new discovery deadlines and ordered Plaintiff to file any motion seeking relief from the limitations set forth in by June 10, 2024.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 4,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "25ae5ed4-94c1-4162-b6f0-72e176105449",
+    "event_text": "Plaintiff, by new counsel, filed the instant motion on June 10, 2024, and Defendants filed their responses on June 17, 2024.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 4,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "9f426a09-dc08-4d61-81e0-9e51e809d0f4",
+    "event_text": "For the reasons discussed at the hearing on May 30, 2024, the Court will not apportion the fee awards at this time.",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 4,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "d4e7e095-22d2-4ece-a06d-bdfbb2821113",
+    "event_text": "Accordingly, Plaintiff may now conduct discovery, consistent with the deadlines set forth in the scheduling order entered May 30, 2024 [DE 86].",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 5,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "f02b223c-0d78-47d5-8ac3-48ea789058b1",
+    "event_text": "with the discovery deadlines set forth by the Court on May 30, 2024 at [DE 86].",
+    "source_doc": "89_report_and_recommendations.pdf",
+    "page_number": 6,
+    "doc_role": "report_recommendation",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "e16e0673-9773-4e9b-bd1c-e2ee04ed7d54",
+    "event_text": "Accordingly, the court adopts Magistrate Judge Martin’s second recommendation  and modifies this court’s own order regarding sanctions  in the following way: plaintiff is permitted to conduct discovery in accordance with the deadlines set forth by the court on May 30, 2024.",
+    "source_doc": "90_order_on_report_and_recommendations.pdf",
+    "page_number": 1,
+    "doc_role": "order",
+    "perspective": "court",
+    "status": "candidate"
+  },
+  {
+    "event_id": "28d82334-f20d-4103-ade1-52e7c939ee57",
+    "event_text": "Date: August 7, 2024 s/ James T. Moody JUDGE JAMES T.",
+    "source_doc": "90_order_on_report_and_recommendations.pdf",
+    "page_number": 1,
+    "doc_role": "order",
+    "perspective": "court",
+    "status": "candidate"
+  }
+]

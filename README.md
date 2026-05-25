@@ -1,6 +1,9 @@
 # chronologix
 A legal-tech MVP that extracts source-linked timelines from public litigation documents and flags missing or conflicting events.
 
+## Note
+The current MVP is not trying to model every litigation chronology workflow. It starts with one small employment-dispute RECAP case to prove the technical spine: document ingestion, PDF parsing, page-level provenance, and candidate event extraction.
+
 ## TODO
 
 ### Done
