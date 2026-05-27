@@ -183,5 +183,13 @@ def test_extract_sentences_by_dates_does_not_split_charge_no():
     ]
 
 
+
+def test_remove_inline_citation_noise_removes_id_at_citation():
+    text = "USS converted the suspension to termination. (Id. at 10.)"
+
+    result = remove_inline_citation_noise(text)
+
+    assert result == "USS converted the suspension to termination. "
+
 def test_extract_sentences_by_dates_returns_empty_list_for_empty_text():
     assert extract_sentences_by_dates("") == []

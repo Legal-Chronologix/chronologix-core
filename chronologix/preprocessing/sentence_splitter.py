@@ -79,8 +79,17 @@ def remove_inline_citation_noise(text: str) -> str:
         r"\(DE\s+##?\s*[^)]*\)",
         r"\(Dkt\.\s*[^)]*\)",
         r"\(ECF\s+No\.\s*[^)]*\)",
-        r"\(Id\.\)",
-        r"\(id\.\)",
+
+        # Id citations:
+        # (Id.)
+        # (Id. at 10.)
+        # (Id. at 94-97.)
+        r"\([Ii]d\.[^)]*\)",
+
+        # Deposition / affidavit citations:
+        # (Pl. Dep. 74.)
+        # (Pl. Dep. at 97, 101.)
+        # (Pl. Aff. ¶ 8.)
         r"\(Pl\.\s+Dep\.[^)]*\)",
         r"\(Pl\.\s+Aff\.[^)]*\)",
         r"\([A-Za-z]+\.\s+Dep\.[^)]*\)",
