@@ -5,9 +5,12 @@ from pathlib import Path
 import pymupdf
 
 from chronologix.models.document import Document
-from chronologix.preprocessing.text_cleaner import clean_extracted_text
+from chronologix.preprocessing.text_cleaner import (
+    clean_extracted_text,
+    remove_pdf_footer_noise,
+)
 from chronologix.utils.file_downloader import slugify_filename
-from chronologix.preprocessing.text_cleaner import remove_pdf_footer_noise
+
 
 class PDFParser:
     """
