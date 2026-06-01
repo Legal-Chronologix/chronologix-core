@@ -3,20 +3,20 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "chronologix"
+name = "chronologix-core"
 version = "0.1.0"
-description = "A source-linked legal chronology MVP using CourtListener/RECAP data"
+description = "Backend pipeline for source-linked litigation chronology extraction and review flags"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "requests>=2.31",
-    "pdfplumber>=0.11",
+    "PyMuPDF>=1.24",
     "dateparser>=1.2",
     "python-dotenv>=1.0",
 ]
 
 [project.scripts]
-chronologix = "chronologix.cli:main"
+chronologix-core = "chronologix.cli:main"
 
 [project.optional-dependencies]
 dev = [
@@ -24,13 +24,8 @@ dev = [
     "ruff>=0.4",
 ]
 
-
-[tool.setuptools]
-packages = [
-    "chronologix",
-    "chronologix.configs",
-    "chronologix.utils",
-]
+[tool.setuptools.packages.find]
+include = ["chronologix*"]
 
 [tool.ruff]
 line-length = 88
@@ -38,14 +33,14 @@ target-version = "py310"
 
 [tool.ruff.lint]
 select = [
-    "E",   # pycodestyle errors
-    "F",   # pyflakes
-    "W",   # pycodestyle warnings
-    "I",   # import sorting
+    "E",
+    "F",
+    "W",
+    "I",
 ]
 
-
 [tool.pytest.ini_options]
+pythonpath = ["."]
 filterwarnings = [
     "ignore:builtin type SwigPyPacked has no __module__ attribute:DeprecationWarning",
     "ignore:builtin type SwigPyObject has no __module__ attribute:DeprecationWarning",

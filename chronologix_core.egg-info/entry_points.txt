@@ -1,0 +1,2 @@
+[console_scripts]
+chronologix-core = chronologix.cli:main
