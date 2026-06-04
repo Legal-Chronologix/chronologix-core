@@ -19,7 +19,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
-from chronologix.extractors.date_extractor import enrich_event_with_date
+from chronologix.steps.extractors.date_extractor import enrich_event_with_date
 
 
 SIGNAL_PREFIX = "event_action_signal:"
@@ -155,15 +155,17 @@ def flag_date_group(date_norm: str, events: list[dict]) -> dict:
 
     if len(perspectives) <= 1:
         perspective = perspectives[0] if perspectives else "unknown"
+        flag = "single_perspective"
 
         return {
             "date_norm": date_norm,
-            "flag": "single_perspective",
+            "flag": flag,
             "reason": (
                 f"All {len(events)} event(s) on this date come from "
                 f"perspective '{perspective}'. No cross-perspective "
                 f"corroboration possible."
             ),
+            "display_reason": build_display_reason(flag, perspectives),
             "perspectives": perspectives,
             "event_ids": [event["event_id"] for event in events],
         }
@@ -194,6 +196,8 @@ def flag_date_group(date_norm: str, events: list[dict]) -> dict:
                 all_conflicts.append((p1, p2, verb1, verb2))
 
     if all_conflicts:
+        flag = "conflicting"
+
         details = "; ".join(
             f"{p1} says '{verb1}' vs {p2} says '{verb2}'"
             for p1, p2, verb1, verb2 in all_conflicts
@@ -201,41 +205,118 @@ def flag_date_group(date_norm: str, events: list[dict]) -> dict:
 
         return {
             "date_norm": date_norm,
-            "flag": "conflicting",
+            "flag": flag,
             "reason": f"Perspective disagreement on decision verbs: {details}",
+            "display_reason": build_display_reason(flag, perspectives),
             "perspectives": perspectives,
             "event_ids": [event["event_id"] for event in events],
         }
 
-    shared_verbs = set.intersection(
-        *verbs_by_perspective.values()
-    ) if verbs_by_perspective else set()
+    shared_verbs = (
+        set.intersection(*verbs_by_perspective.values())
+        if verbs_by_perspective
+        else set()
+    )
 
     if shared_verbs:
+        flag = "corroborated"
+
         return {
             "date_norm": date_norm,
-            "flag": "corroborated",
+            "flag": flag,
             "reason": (
                 "Multiple perspectives share action verb(s): "
                 f"{', '.join(sorted(shared_verbs))}"
             ),
+            "display_reason": build_display_reason(flag, perspectives),
             "perspectives": perspectives,
             "event_ids": [event["event_id"] for event in events],
         }
 
+    flag = "partial"
+
     return {
         "date_norm": date_norm,
-        "flag": "partial",
+        "flag": flag,
         "reason": (
             "Multiple perspectives reference this date, but they do not "
             "share or contradict action verbs. These may be unrelated "
             "events sharing a date or passing references."
         ),
+        "display_reason": build_display_reason(flag, perspectives),
         "perspectives": perspectives,
         "event_ids": [event["event_id"] for event in events],
     }
+    
+    
+def format_perspective_label(perspectives: list[str]) -> str:
+    """
+    Convert backend perspective labels into user-facing text.
+    """
+    labels = {
+        "court": "court",
+        "plaintiff": "plaintiff-side",
+        "party": "party",
+        "admin": "administrative",
+        "unknown": "unknown",
+    }
+
+    readable = [labels.get(p, p.replace("_", " ")) for p in perspectives]
+
+    if not readable:
+        return "one source perspective"
+
+    if len(readable) == 1:
+        return f"{readable[0]} source"
+
+    if len(readable) == 2:
+        return f"{readable[0]} and {readable[1]} sources"
+
+    return f"{', '.join(readable[:-1])}, and {readable[-1]} sources"
 
 
+def build_display_reason(
+    flag: str,
+    perspectives: list[str],
+) -> str:
+    """
+    Build user-facing review reason.
+
+    This avoids exposing backend scoring details such as action verbs,
+    opposing verb pairs, or normalized-date grouping.
+    """
+    perspective_label = format_perspective_label(perspectives)
+
+    if flag == "conflicting":
+        return (
+            f"{perspective_label.capitalize()} describe this date differently. "
+            "Review the related source sentences together before relying on this group."
+        )
+
+    if flag == "corroborated":
+        return (
+            f"{perspective_label.capitalize()} mention this date with a similar "
+            "event signal. Review the linked source sentences before relying on it."
+        )
+
+    if flag == "single_perspective":
+        return (
+            f"Only the {perspective_label} mentions this date. No other source "
+            "perspective was found for cross-checking in this document set."
+        )
+
+    if flag == "partial":
+        return (
+            f"{perspective_label.capitalize()} mention this date, but the related "
+            "events may not describe the same fact. Review before grouping them together."
+        )
+
+    return (
+        "This date group was surfaced for human review. Inspect the linked source "
+        "sentences before relying on it."
+    )
+    
+    
 def flag_events(events: list[dict]) -> dict:
     """
     Enrich events with dates, filter obvious non-review items, group by date,
@@ -331,8 +412,8 @@ def flag_candidate_events_file(
     return result
 
 
-# if __name__ == "__main__":
-#     flag_candidate_events_file(
-#         input_path="data/court_listener/gipson/candidate_events.json",
-#         output_path="data/court_listener/gipson/flagged_events.json",
-#     )
+if __name__ == "__main__":
+    flag_candidate_events_file(
+        input_path="data/court_listener/gipson/candidate_events.json",
+        output_path="data/court_listener/gipson/flagged_events.json",
+    )

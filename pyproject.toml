@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.scripts]
-chronologix-core = "chronologix.cli:main"
+chronologix-core = "chronologix.main:main"
 
 [project.optional-dependencies]
 dev = [

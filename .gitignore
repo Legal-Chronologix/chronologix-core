@@ -4,3 +4,4 @@
 chrono-env
 .env
 .ruff_cache
+chronologix_core.egg-info

@@ -20,8 +20,8 @@ import re
 import uuid
 from pathlib import Path
 
-from chronologix.classifiers.document_role_classifier import infer_document_role
-from chronologix.preprocessing.sentence_splitter import extract_sentences_by_dates
+from chronologix.steps.classifiers.document_role_classifier import infer_document_role
+from chronologix.steps.preprocessing.sentence_splitter import extract_sentences_by_dates
 
 # Phrases that strongly indicate a sentence is NOT a real event:
 # certificate-of-service blocks, contact info, page footers, etc.

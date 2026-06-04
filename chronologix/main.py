@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from chronologix.extractors.candidate_events_extractor import build_candidate_events
-from chronologix.parsers.pdf_parser import PDFParser
-from chronologix.review.readiness_flags import flag_candidate_events_file
+from chronologix.steps.extractors.candidate_events_extractor import build_candidate_events
+from chronologix.steps.parsers.pdf_parser import PDFParser
+from chronologix.steps.review.readiness_flags import flag_candidate_events_file
 from chronologix.sources.court_listener.document_mapper import (
     load_documents_from_available_docs,
 )
