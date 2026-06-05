@@ -1,4 +1,4 @@
-from chronologix.steps.preprocessing.sentence_splitter import (
+from chronologix.tools.preprocessing.sentence_splitter import (
     clean_sentence_candidate,
     extract_sentences_by_dates,
     normalize_whitespace_for_extraction,

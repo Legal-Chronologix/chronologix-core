@@ -1,6 +1,6 @@
 from textwrap import dedent
 
-from chronologix.steps.preprocessing.text_cleaner import clean_extracted_text
+from chronologix.tools.preprocessing.text_cleaner import clean_extracted_text
 
 
 def test_clean_extracted_text_returns_empty_string_for_empty_input():

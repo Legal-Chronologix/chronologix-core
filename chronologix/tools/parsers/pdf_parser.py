@@ -5,7 +5,7 @@ from pathlib import Path
 import pymupdf
 
 from chronologix.models.document import Document
-from chronologix.steps.preprocessing.text_cleaner import (
+from chronologix.tools.preprocessing.text_cleaner import (
     clean_extracted_text,
     remove_pdf_footer_noise,
 )

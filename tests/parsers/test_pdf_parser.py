@@ -1,6 +1,6 @@
 from unittest.mock import Mock
 
-from chronologix.steps.parsers.pdf_parser import PDFParser
+from chronologix.tools.parsers.pdf_parser import PDFParser
 
 
 def test_extract_text_by_page(monkeypatch, tmp_path):
@@ -24,11 +24,11 @@ def test_extract_text_by_page(monkeypatch, tmp_path):
     mock_clean = Mock(side_effect=lambda text: f"cleaned: {text}")
 
     monkeypatch.setattr(
-        "chronologix.steps.parsers.pdf_parser.pymupdf.open",
+        "chronologix.tools.parsers.pdf_parser.pymupdf.open",
         mock_open,
     )
     monkeypatch.setattr(
-        "chronologix.steps.parsers.pdf_parser.clean_extracted_text",
+        "chronologix.tools.parsers.pdf_parser.clean_extracted_text",
         mock_clean,
     )
 

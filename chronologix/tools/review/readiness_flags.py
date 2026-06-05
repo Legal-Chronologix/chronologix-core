@@ -19,7 +19,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
-from chronologix.steps.extractors.date_extractor import enrich_event_with_date
+from chronologix.tools.extractors.date_extractor import enrich_event_with_date
 
 
 SIGNAL_PREFIX = "event_action_signal:"
