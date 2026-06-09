@@ -1,14 +1,19 @@
+# apps/api/app.py
+
 from fastapi import FastAPI
+
+from apps.api.routes import health
 
 
 def create_app() -> FastAPI:
-    fastapi_app = FastAPI(title="Chronologix API")
+    app = FastAPI(
+        title="Chronologix API",
+        version="0.1.0",
+    )
 
-    @fastapi_app.get("/health")
-    def health_check():
-        return {"status": "ok"}
+    app.include_router(health.router)
 
-    return fastapi_app
+    return app
 
 
 app = create_app()
